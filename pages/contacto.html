@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="grid">
+<body class="grid-contact">
     <header class="header">
         <img src="../assets/logo.png" alt="" class="header--logo">
         <h1 class="header--title">Portafolio</h1>
@@ -28,9 +28,6 @@
               <a class="nav-link" href="./herramientas.html">Herramientas</a>
             </li>
             <li class="nav-item ms-center">
-              <a class="nav-link" href="./galeria.html">Galería</a>
-            </li>
-            <li class="nav-item ms-center">
               <a class="nav-link" href="./sobre-mi.html">Sobre mí</a>
             </li>
             <li class="nav-item ms-center">
@@ -43,8 +40,38 @@
         </div>
       </div>
     </nav>
-    <main>
+    <main class="main-contact">
+      <section class="formulario">
+        <legend>
+            <h3>¡Me podés contactar por este medio!</h3>
+        </legend>
+        <div>
+            <form action="">
+                <div>
+                    <label for="nombre" class="labelForm">Nombre</label>
+                    <input type="text" placeholder="Ingrese su nombre" id="nombre" class="inputsForm">
+                </div>
+                <div>
+                    <label class="labelForm" for="apellidox">Apellido</label>
+                    <input type="text" placeholder="Ingrese su apellido" id="apellidox" class="inputsForm">
+                </div>
+                <div>
+                    <label for="emailll" class="emailForm">Email</label>
+                    <input type="email" placeholder="Ingrese su email" id="emailll" class="inputsForm">
+                </div>
+                <div>
+                    <label for="comentario" class="commentForm">Comentario</label>
+                    <textarea class="inputsForm" name="comentario" id="" cols="21" rows="10"
+                        placeholder="Ingrese su comentario"></textarea>
+                </div>
+                <div>
+                    <input type="submit" value="Enviar" class="inputsForm envio">
+                    <input type="reset" value="Resetear" class="inputsForm resetear">
+                </div>
 
+            </form>
+        </div>
+    </section>
     </main>
     <footer class="footer">
         <h3>Copyright Santiago Morillo 2006-2022</h3>

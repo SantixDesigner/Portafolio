@@ -1,0 +1,61 @@
+.grid-contact{
+    background-color: $pnthalo-green;
+    display: grid;
+    grid-template-areas: "header nav"
+    "mainContact mainContact"
+    "footer footer";
+}
+
+.main-contact{
+    grid-area: mainContact;
+    margin: 5px 0px 5px 0px;
+    .formulario {
+        display: flex;
+        flex-direction: column;
+        background-color: $rifle-green;
+        width: 80%;
+        max-width: 900px;
+        margin: auto;
+        text-align: center;
+        grid-area: formulario;
+        color:$white;
+        div {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            text-align: center;
+            width: 70%;
+            font-weight: bold;
+    
+            input { 
+                transition: .1s;
+                border: none;
+                border-radius: 15px 15px 0 15px;
+                padding-left: 5px;
+                font-weight: bold;
+                text-align: center;
+                outline: none;
+                &:hover{
+                    border-bottom: .1px solid black;
+                }
+            }
+            .envio{
+                margin-bottom: 5px;
+            }
+            .resetear{
+                margin-bottom: 5px;
+            }
+    
+            textarea {
+                outline: none;
+                transition: .1s;
+                border: .1px solid black;
+                border-radius: 15px 0 0 0;
+                padding: 5px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 5px;
+            }
+        }
+    }
+}

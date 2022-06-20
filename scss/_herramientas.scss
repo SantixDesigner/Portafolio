@@ -1,0 +1,30 @@
+.grid-tools{
+    background-color: $rifle-green;
+}
+
+.main-tools{
+
+    background-color: $royal-blue;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+    @for $i from 1 through 2{
+        .section#{$i}{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            background-color: $pnthalo-green;
+            color: $white;
+            width: 90%;
+            max-width: 600px;
+            border: .1px solid black;
+            img{
+                margin-bottom: 25px;
+                height: 200px;
+                width: 90%;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -33,10 +33,11 @@
                 li{
                     a{
                         color: $white;
-                        transition:.3s;
+                        
                         background-image: radial-gradient(red,yellow);
                         background-position: 0% 100%;
                         background-size: 0% 0%, 2.5px;
+                        transition:.3s;
                         &:hover{
                             color:$green;
                             font-size: 20px;
