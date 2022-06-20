@@ -1,0 +1,25 @@
+.main-about-me{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $dark-purple;
+    justify-content: space-evenly;
+    @for $i from 1 through 2{
+        .section#{$i}{
+            width: 90%;
+            max-width: 600px;
+            background-color: $royal-blue;
+            text-align: center;
+            color: $white;
+            margin: 5px;
+            padding-bottom: 10px;
+            img{
+                width: 95%;
+            }
+        }
+        .section2{
+            img{
+                margin-top: 24px;
+            }
+        }
+    }
+}

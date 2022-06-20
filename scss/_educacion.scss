@@ -1,0 +1,29 @@
+.main-education{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: $rifle-green;
+    @for $i from 1 through 3{
+        .section#{$i}{
+            background-color: $royal-blue;
+            color: white;
+            width: 90%;
+
+            max-width: 600px;
+            margin: 10px;
+            img{
+                object-fit:cover;
+                margin-bottom: 10px;
+                width: 90%;
+                height: 300px;
+                
+            }
+        }
+        .section2{
+            img{
+                margin-top: 25px;
+            }
+        }
+    }
+}
